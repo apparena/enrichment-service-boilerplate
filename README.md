@@ -9,6 +9,13 @@ project template is initialized with the command
 > cd myservicename
 > yarn
 ```
+
+### Update config
+
+1. Rename `config/dev.yml.dist` to `config/dev.yml`
+2. Rename `config/production.yml.dist` to `config/production.yml`
+3. (Optional) Update config files with your data
+
 ### Create a new function
 
 Create a new function including tests and two HTTP endpoints (they are
