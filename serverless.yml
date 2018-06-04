@@ -9,7 +9,7 @@ provider:
 
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, "eu-central-1"}
-  vpc: ${file(config/${self:provider.stage}.yml):vpc}
+  #vpc: ${file(config/${self:provider.stage}.yml):vpc}
 
   cfLogs: true
   environment: ${file(config/${self:provider.stage}.yml):ENVIRONMENT}
