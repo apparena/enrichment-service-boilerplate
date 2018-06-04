@@ -36,12 +36,7 @@ exports.index = async (event) => {
     return event;
   } catch (err) {
     // Global error handling
-    console.error(`Error processing aggregation: ${err}`);
-    return {
-      statusCode : 500,
-      body       : JSON.stringify({
-        message : `Error processing aggregations: ${err}`,
-      }),
-    };
+    log.error(`Error processing aggregation: ${err}`);
+    throw new Error(err);
   }
 };
