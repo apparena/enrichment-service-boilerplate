@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "console-log-level": "^1.4.0",
     "geoip-lite": "^1.2.1"
   },
   "devDependencies": {
